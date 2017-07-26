@@ -1,0 +1,233 @@
+/**************************
+BASE STYLES
+**************************/
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #4A4A4A;
+  background: #FAFAFA;
+}
+
+p {
+  margin-top: 0;
+}
+
+
+
+/**************************
+HELPER CLASSES
+**************************/
+a{
+  color: #4A4A4A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:link{
+  color: #4A4A4A;
+}
+
+a:hover{
+  color: #286D7C;
+}
+
+a:active{
+  color: #0E4854;
+}
+
+li {
+  list-style:none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/**************************
+CONTENT LAYOUT
+**************************/
+.name {
+  font-size: 2em;
+  color:red;
+}
+
+
+.wrapper {
+  background-color: white;
+  padding: 15px;
+}
+
+
+.profile-name {
+  text-align: center;
+  color: #333;
+  font-size: 4em;
+}
+
+.banner-image {
+  min-width: 100%;
+}
+
+.profile-image {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/**************************
+MEDIA QUERIES
+**************************/
+
+@media screen and (min-width: 320px) {
+
+  .main-header{
+    padding: 15px;
+    text-align: center;
+  }
+
+  .main-nav {
+    text-align: center;
+    padding: 0;
+    background-color: white;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 10px;
+    border-bottom: solid 5px;
+    border-color: #FAFAFA;
+
+  }
+
+  .name{
+    margin: 0;
+    text-align: center;
+    display: block;
+    padding: 10px;
+  }
+
+  p{
+    padding: 15px;
+    color: #838383;
+  }
+
+  .profile {
+    max-width: 200px;
+  }
+
+  .main-footer {
+    border-top: solid 1px;
+    border-color: #ECECEC;
+    margin: 15px;
+  }
+
+  .main-footer li{
+    display: inline-block;
+    margin-right: 70px;
+  }
+
+.wrapper,
+.about,
+.contact {
+  text-align: center;
+}
+
+  }
+
+
+
+@media screen and (min-width: 768px) {
+
+   .main-nav{
+     background-color: #FAFAFA;
+   }
+
+   .main-nav li{
+     display: inline-block;
+   }
+
+
+  .profile{
+    float: right;
+    margin-left: 15px;
+   }
+
+   .about {
+    max-width: 90%;
+    padding: 40px;
+  }
+
+  .about p{
+   text-align: left;
+  }
+
+
+  .section {
+    max-width: 45%;
+    max-height: 380px;
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+
+     .main-nav{
+       background-color: #FAFAFA;
+     }
+
+     .name {
+       display: inline;
+       float:left;
+       margin: 15px;
+     }
+
+     .main-nav li{
+       display: inline-block;
+     }
+
+
+    .profile{
+      max-width: 300px;
+     float: right;
+     margin-left: 30px;
+    }
+
+     .about {
+      max-width: 90%;
+      margin-bottom: 70px;
+    }
+
+    .about p{
+     text-align: left;
+    }
+
+
+    .section {
+      max-width: 28%;
+      max-height: 380px;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .wrapper{
+      max-width: 1000px;
+    }
+}
